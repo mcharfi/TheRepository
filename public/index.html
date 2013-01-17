@@ -9,7 +9,7 @@
         padding: 0;
         background-image:url('http://i708.photobucket.com/albums/ww84/stardustmom_bucket/stars.gif');
 		background-repeat:repeat;
-        background-color: #C0C0C0;
+        background-color: #000000;
         font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
         font-size: 13px;
         color: #333;
@@ -29,7 +29,7 @@
 
 
       #page {
-        background-color: #8fd8d8;
+        background-color: #C0C0C0;
         width: 750px;
         margin: 0;
         margin-left: auto;
@@ -72,16 +72,12 @@
         font-weight: bold;
         font-size: 16px;
       }
-      #header h3 {
-        color: #000000;
-        font-weight: bold;
-        font-size: 16px;
-      }
 
       #about h3 {
         margin: 0;
         margin-bottom: 10px;
         font-size: 14px;
+        color: #000000;
       }
 
       #about-content {
@@ -164,7 +160,8 @@
         margin-top: 25px;
         font-size: 16px;
         padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #000000;
+        color: #000000;
       }
       #sidebar li {
         list-style-type: none;
@@ -211,7 +208,7 @@
               <li><a href="http://www.wikipedia.org/" target="_blank">Wikipedia</a></li>
               <li><a href="http://www.youtube.com/" target="_blank">YouTube</a></li>
             </ul>
-         </li><br><br><br>
+         </li><br><br>
           <li>
             <h3>Documentation</h3>
             <ul class="links">
@@ -237,25 +234,14 @@
 
         <div id="getting-started">
         	<img src="http://valerienunnelly.com/images/Satellite-Earth-Images.jpg" width=350><br><br><br>
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
+          
+        <form action="someotherpage.html"
+			method="post">
+		<input type="text" name="a_field" />
+		<input type="submit"
+		    value="A Button!" />
+		</form>
+         
         </div>
       </div>
 
