@@ -18,3 +18,125 @@
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+
+
+
+  <div class="row">
+    <div class="twelve columns">
+      <h2>Welcome to FixIT Philadelphia</h2>
+      <p><i><strong>If it ain't broke, don't fix it. But if it is, we'll be happy to help!</strong></i></p>
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="eight columns">
+      <h3>Get Tech Support Now!</h3>
+
+      <!-- Grid Example -->
+      <div class="row">
+        <div class="twelve columns">
+          <div class="panel">
+            <p>Get tech support for: Windows and Mac Operating Systems, Microsoft Office, Virus problems, Internet security, Email problems, iTunes, and much more.</p>
+          </div>
+        </div>
+      </div>
+      <dl class="tabs">
+        <dd class="active"><a href="#simple1">Issue Form</a></dd>
+        <dd><a href="#simple2">Learn More</a></dd>
+        <dd><a href="#simple3">Helpful Links</a></dd>
+        <dd><a href="#simple4">Join Our Staff</a></dd>
+      </dl>
+
+      <ul class="tabs-content">
+        <li class="active" id="simple1Tab">
+        	<form action="someotherpage.html" method="get">
+			  Date: <input type="date" name="date" id="date" value="" />
+			  Name: <input type="text" name="name" id="name" value="" />
+			  Email: <input type="email" name="email" id="email" value="" />
+			  Phone Number: <input type="tel" name="phone" id="phone" value="" />
+			  Check if you live on-campus: <input type="checkbox" name="location" id="location" value="" /><br>
+			  Your Location/Address: <input type="text" name="location1" id="location1" value="" />
+			  Device Type:<br>			  
+			 <form><input name="radio" type="radio" id="radio1"> Desktop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      		 <input name="radio" type="radio" id="radio2"> Laptop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      		 <input name="radio" type="radio" id="radio3"> Mobile Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      		 <input name="radio" type="radio" id="radio4"> iPad/eReader &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      		 <input name="radio" type="radio" id="radio5"> Other</form>       		     
+			  Operating System (Windows, Mac OS, Android, iOS,  Blackberry, etc.): <input type="text" name="os" id="os" value="" />
+			  Issue Description: <input type="text" name="comments" id="comments" value="" />
+			  <a href="#" data-reveal-id="exampleModal"><input class="small button" type="submit" value="Submit" /></a>
+			</form>
+		</li>
+        <li id="simple2Tab">Here is information for you to learn more about how we resolve your problems.<br><br>
+        	<form action="someotherpage2.html" method="get">
+			  Name: <input type="text" name="name2" id="name2" value="" />
+			  Email: <input type="email" name="email2" id="email2" value="" />
+			  Questions/Comments: <input type="text" name="comments2" id="comments2" value="" />
+			  <a href="#" data-reveal-id="exampleModal2"><input class="small button" type="submit" value="Submit" /></a>
+			</form>
+			</li>
+        <li id="simple3Tab">Feel free to use the links below to check out simple tech fixes that don't require our consultation.</li>
+        <li id="simple4Tab">Want to join our staff? Leave your information below and we will contact you about potential opportunities.<br><br>
+        	<form action="someotherpage4.html" method="get">
+			  Name: <input type="text" name="name4" id="name4" value="" />
+			  Email: <input type="email" name="email4" id="email4" value="" />
+			  Questions/Comments: <input type="text" name="comments4" id="comments4" value="" />
+			  <a href="#" data-reveal-id="exampleModal4"><input class="small button" type="submit" value="Submit" /></a>
+			</form>
+			</li>
+      </ul> 
+    </div>
+
+    <div class="four columns">
+      <h4>About FixIT</h4>
+      <p>FixIT makes it easy for anyone to get tech support from anywhere on campus within 24 hours. The first service of its kind, FixIT charges 50¢ per-minute, making it easy for you to get the help you need no matter what the problem is. And, because we believe in our service so much, if we can't help you, not only is our service free, but we can offer you advice on how to get it fixed.</p>
+      <p>Our support staff has both the passion and expertise to help you fix your tech issue, regardless of the problem you are experiencing. Software issues? Internet not connecting? Have a virus? Need to organize your photos on your computer or online? Need help setting up a social networking page, or with Google's online tools? We can do that too. Give us a try, your first five minutes are free. There is nothing to lose.</p>
+	  <p><img src="http://fraudavengers.org/wp-content/uploads/2011/10/MultipleTechDevices.jpg"></p>
+    </div>
+  </div>
+  
+  <div id="exampleModal" class="reveal-modal">
+    <h2>Thank you.</h2>
+    <p>
+      Your issue has been placed in the queue. We will contact you within 48 hours in response to your inquiry. Please contact <code>mcharfi13@gmail.com</code> for any questions or comments about your issue.
+    </p>
+    <a class="close-reveal-modal">×</a>
+  </div>
+  
+    <div id="exampleModal2" class="reveal-modal">
+    <h2>Thank you.</h2>
+    <p>
+      We will contact you within 48 hours in response to your inquiry. Please contact <code>mcharfi13@gmail.com</code> for any questions or comments.
+    </p>
+    <a class="close-reveal-modal">×</a>
+  </div>
+  
+      <div id="exampleModal4" class="reveal-modal">
+    <h2>Thank you.</h2>
+    <p>
+      We will contact you within 48 hours in response to your inquiry. Please contact <code>mcharfi13@gmail.com</code> for any questions or comments.
+    </p>
+    <a class="close-reveal-modal">×</a>
+  </div>
+  
+  <br>
+  <div align="center"><strong>© 2013 FixIT. All rights reserved.</strong></center></div><br>
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  <script src="javascripts/jquery.js"></script><script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script><script src="javascripts/jquery.foundation.forms.js"></script><script src="javascripts/jquery.foundation.reveal.js"></script><script src="javascripts/jquery.foundation.orbit.js"></script><script src="javascripts/jquery.foundation.navigation.js"></script><script src="javascripts/jquery.foundation.buttons.js"></script><script src="javascripts/jquery.foundation.tabs.js"></script><script src="javascripts/jquery.foundation.tooltips.js"></script><script src="javascripts/jquery.foundation.accordion.js"></script><script src="javascripts/jquery.placeholder.js"></script><script src="javascripts/jquery.foundation.alerts.js"></script><script src="javascripts/jquery.foundation.topbar.js"></script><script src="javascripts/jquery.foundation.joyride.js"></script><script src="javascripts/jquery.foundation.clearing.js"></script><script src="javascripts/jquery.foundation.magellan.js"></script>
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+
+  
+    <script>
+    $(window).load(function(){
+      $("#featured").orbit();
+    });
+    </script> 
