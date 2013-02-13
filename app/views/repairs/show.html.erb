@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Day:</b>
+  <%= @repair.day %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @repair.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @repair.email %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @repair.number %>
+</p>
+
+<p>
+  <b>Oncampus:</b>
+  <%= @repair.oncampus %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @repair.location %>
+</p>
+
+<p>
+  <b>Device:</b>
+  <%= @repair.device %>
+</p>
+
+<p>
+  <b>Opsystem:</b>
+  <%= @repair.opsystem %>
+</p>
+
+<p>
+  <b>Issue:</b>
+  <%= @repair.issue %>
+</p>
+
+
+<%= link_to 'Edit', edit_repair_path(@repair) %> |
+<%= link_to 'Back', repairs_path %>

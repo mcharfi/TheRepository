@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  day: 2013-02-13
+  name: MyText
+  email: MyText
+  number: 
+  oncampus: false
+  location: MyText
+  device: MyText
+  opsystem: MyText
+  issue: MyText
+
+two:
+  day: 2013-02-13
+  name: MyText
+  email: MyText
+  number: 
+  oncampus: false
+  location: MyText
+  device: MyText
+  opsystem: MyText
+  issue: MyText
