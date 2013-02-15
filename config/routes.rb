@@ -3,7 +3,7 @@ MehdiApp::Application.routes.draw do
 
   #resources :issues
 
-  #resources :posts
+  resources :posts
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

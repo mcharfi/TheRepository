@@ -17,11 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_area :name %>
+    <%= f.text_field :name %>
   </div>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.text_area :email %>
+    <%= f.text_field :email %>
   </div>
   <div class="field">
     <%= f.label :number %><br />
@@ -33,15 +33,24 @@
   </div>
   <div class="field">
     <%= f.label :location %><br />
-    <%= f.text_area :location %>
+    <%= f.text_field :location %>
   </div>
   <div class="field">
     <%= f.label :device %><br />
-    <%= f.radio_button :device %>
+    <%= f.radio_button(:device, :desktop) %>
+    <%= f.label(:device_desktop, "Desktop") %>
+    <%= f.radio_button(:device, :laptop) %>
+    <%= f.label(:device_laptop, "Laptop") %>
+    <%= f.radio_button(:device, :mobile) %>
+    <%= f.label(:device_mobile, "Mobile") %>
+    <%= f.radio_button(:device, :ipad) %>
+    <%= f.label(:device_ipad, "iPad/eReader") %>
+    <%= f.radio_button(:device, :other) %>
+    <%= f.label(:device_other, "Other") %>
   </div>
   <div class="field">
     <%= f.label :opsystem %><br />
-    <%= f.collection_select :opsystem %>
+    <%= f.collection_select(:opsystem, [:windows, :macos, :android, :ios, :blackberry, :other], :to_s, :to_s) %>
   </div>
   <div class="field">
     <%= f.label :issue %><br />
