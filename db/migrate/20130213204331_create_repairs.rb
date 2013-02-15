@@ -4,7 +4,7 @@ class CreateRepairs < ActiveRecord::Migration
       t.date :day
       t.text :name
       t.text :email
-      t.tel :number
+      t.text :number
       t.boolean :oncampus
       t.text :location
       t.text :device
