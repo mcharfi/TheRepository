@@ -342,3 +342,49 @@ org.eclipse.jface.text.BadLocationException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.aptana.php.debug.epl 4 4 2013-02-14 12:53:22.113
+!MESSAGE class org2.eclipse.php.internal.debug.core.xdebug.dbgp.session.DBGpSession : Unexpected null from readResponse waiting for Init
+
+!ENTRY com.aptana.php.debug.epl 4 0 2013-02-14 12:53:22.408
+!MESSAGE (Build 3.3.1.201212171919) [ERROR] com.aptana.php.debug/debug Unexpected Exception: Listener thread still listening
+!STACK 0
+java.lang.NegativeArraySizeException
+	at org2.eclipse.php.internal.debug.core.xdebug.dbgp.session.DBGpSession.readResponse(DBGpSession.java:490)
+	at org2.eclipse.php.internal.debug.core.xdebug.dbgp.session.DBGpSession.<init>(DBGpSession.java:91)
+	at org2.eclipse.php.internal.debug.core.xdebug.communication.XDebugCommunicationDaemon.startConnectionThread(XDebugCommunicationDaemon.java:166)
+	at org2.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:244)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.aptana.php.debug.epl 4 0 2013-02-14 12:54:03.480
+!MESSAGE (Build 3.3.1.201212171919) [ERROR] com.aptana.php.debug/debug Unexpected Exception: Listener thread still listening
+!STACK 0
+java.lang.NegativeArraySizeException
+	at org2.eclipse.php.internal.debug.core.xdebug.dbgp.session.DBGpSession.readResponse(DBGpSession.java:490)
+	at org2.eclipse.php.internal.debug.core.xdebug.dbgp.session.DBGpSession.<init>(DBGpSession.java:91)
+	at org2.eclipse.php.internal.debug.core.xdebug.communication.XDebugCommunicationDaemon.startConnectionThread(XDebugCommunicationDaemon.java:166)
+	at org2.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:244)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.aptana.php.debug.epl 4 4 2013-02-14 15:53:40.792
+!MESSAGE class org2.eclipse.php.internal.debug.core.xdebug.dbgp.session.DBGpSession : Unexpected null from readResponse waiting for Init
+
+!ENTRY com.aptana.php.debug.epl 4 0 2013-02-14 15:53:40.944
+!MESSAGE (Build 3.3.1.201212171919) [ERROR] com.aptana.php.debug/debug Unexpected Exception: Listener thread still listening
+!STACK 0
+java.lang.NegativeArraySizeException
+	at org2.eclipse.php.internal.debug.core.xdebug.dbgp.session.DBGpSession.readResponse(DBGpSession.java:490)
+	at org2.eclipse.php.internal.debug.core.xdebug.dbgp.session.DBGpSession.<init>(DBGpSession.java:91)
+	at org2.eclipse.php.internal.debug.core.xdebug.communication.XDebugCommunicationDaemon.startConnectionThread(XDebugCommunicationDaemon.java:166)
+	at org2.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:244)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.aptana.php.debug.epl 4 0 2013-02-14 15:54:25.923
+!MESSAGE (Build 3.3.1.201212171919) [ERROR] com.aptana.php.debug/debug Unexpected Exception: Listener thread still listening
+!STACK 0
+java.lang.NegativeArraySizeException
+	at org2.eclipse.php.internal.debug.core.xdebug.dbgp.session.DBGpSession.readResponse(DBGpSession.java:490)
+	at org2.eclipse.php.internal.debug.core.xdebug.dbgp.session.DBGpSession.<init>(DBGpSession.java:91)
+	at org2.eclipse.php.internal.debug.core.xdebug.communication.XDebugCommunicationDaemon.startConnectionThread(XDebugCommunicationDaemon.java:166)
+	at org2.eclipse.php.internal.debug.core.daemon.AbstractDebuggerCommunicationDaemon$ReceiverThread.run(AbstractDebuggerCommunicationDaemon.java:244)
+	at java.lang.Thread.run(Unknown Source)
