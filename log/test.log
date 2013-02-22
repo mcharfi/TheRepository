@@ -1,0 +1,272 @@
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35mRepair Exists (0.0ms)[0m  SELECT 1 FROM "repairs" WHERE "repairs"."email" = 'mcharfi13@gmail.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRepair Exists (1.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRepair Exists (1.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRepair Exists (1.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35mSQL (195.0ms)[0m  INSERT INTO "repairs" ("created_at", "day", "device", "email", "issue", "location", "name", "number", "oncampus", "opsystem", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 20 Feb 2013 15:04:06 UTC +00:00], ["day", nil], ["device", nil], ["email", nil], ["issue", nil], ["location", nil], ["name", nil], ["number", nil], ["oncampus", nil], ["opsystem", nil], ["updated_at", Wed, 20 Feb 2013 15:04:06 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRepair Exists (1.0ms)[0m  SELECT 1 FROM "repairs" WHERE ("repairs"."email" = '' AND "repairs"."id" != 1) LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35mSQL (66.0ms)[0m  INSERT INTO "repairs" ("created_at", "day", "device", "email", "issue", "location", "name", "number", "oncampus", "opsystem", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 20 Feb 2013 15:06:23 UTC +00:00], ["day", nil], ["device", nil], ["email", nil], ["issue", nil], ["location", nil], ["name", nil], ["number", nil], ["oncampus", nil], ["opsystem", nil], ["updated_at", Wed, 20 Feb 2013 15:06:23 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRepair Exists (0.0ms)[0m  SELECT 1 FROM "repairs" WHERE ("repairs"."email" = '' AND "repairs"."id" != 1) LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+
+
+Started GET "/repairs" for 127.0.0.1 at 2013-02-20 10:06:23 -0500
+Processing by RepairsController#index as HTML
+  [1m[36mRepair Load (1.0ms)[0m  [1mSELECT "repairs".* FROM "repairs" [0m
+  Rendered repairs/index.html.erb within layouts/application (116.0ms)
+Completed 200 OK in 419ms (Views: 417.0ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRepair Exists (1.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35mSQL (142.0ms)[0m  INSERT INTO "repairs" ("created_at", "day", "device", "email", "issue", "location", "name", "number", "oncampus", "opsystem", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 20 Feb 2013 15:11:03 UTC +00:00], ["day", nil], ["device", nil], ["email", nil], ["issue", nil], ["location", nil], ["name", nil], ["number", nil], ["oncampus", nil], ["opsystem", nil], ["updated_at", Wed, 20 Feb 2013 15:11:03 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRepair Exists (0.0ms)[0m  SELECT 1 FROM "repairs" WHERE ("repairs"."email" = '' AND "repairs"."id" != 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35mRepair Exists (1.0ms)[0m  SELECT 1 FROM "repairs" WHERE "repairs"."email" = 'mcharfi13@gmail.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35mRepair Exists (0.0ms)[0m  SELECT 1 FROM "repairs" WHERE "repairs"."email" = 'mcharfi13@gmail.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRepair Exists (1.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35mRepair Exists (0.0ms)[0m  SELECT 1 FROM "repairs" WHERE "repairs"."email" = 'mcharfi13@gmail.com' LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/repairs" for 127.0.0.1 at 2013-02-20 10:35:08 -0500
+Processing by RepairsController#index as HTML
+  [1m[36mRepair Load (0.0ms)[0m  [1mSELECT "repairs".* FROM "repairs" [0m
+  Rendered repairs/index.html.erb within layouts/application (97.0ms)
+Completed 200 OK in 304ms (Views: 302.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/repairs" for 127.0.0.1 at 2013-02-20 10:37:03 -0500
+Processing by RepairsController#index as HTML
+  [1m[35mRepair Load (1.0ms)[0m  SELECT "repairs".* FROM "repairs" 
+  Rendered repairs/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 275ms (Views: 272.0ms | ActiveRecord: 1.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mRepair Exists (0.0ms)[0m  SELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mRepair Exists (0.0ms)[0m  SELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = 'mcharfi13@gmail.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/repairs" for 127.0.0.1 at 2013-02-20 10:46:30 -0500
+Processing by RepairsController#index as HTML
+  [1m[35mRepair Load (0.0ms)[0m  SELECT "repairs".* FROM "repairs" 
+  Rendered repairs/index.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 298ms (Views: 296.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/repairs/new" for 127.0.0.1 at 2013-02-20 10:46:31 -0500
+Processing by RepairsController#new as HTML
+  Rendered repairs/_form.html.erb (51.0ms)
+  Rendered repairs/new.html.erb within layouts/application (130.0ms)
+Completed 200 OK in 159ms (Views: 138.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/repairs" for 127.0.0.1 at 2013-02-20 10:49:34 -0500
+Processing by RepairsController#index as HTML
+  [1m[35mRepair Load (0.0ms)[0m  SELECT "repairs".* FROM "repairs" 
+  Rendered repairs/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 273ms (Views: 270.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/repairs/new" for 127.0.0.1 at 2013-02-20 10:49:35 -0500
+Processing by RepairsController#new as HTML
+  Rendered repairs/_form.html.erb (44.0ms)
+  Rendered repairs/new.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 117ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/repairs" for 127.0.0.1 at 2013-02-20 10:58:40 -0500
+Processing by RepairsController#index as HTML
+  [1m[35mRepair Load (0.0ms)[0m  SELECT "repairs".* FROM "repairs" 
+  Rendered repairs/index.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 367ms (Views: 364.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (112.0ms)[0m  INSERT INTO "repairs" ("created_at", "day", "device", "email", "issue", "location", "name", "number", "oncampus", "opsystem", "otherdevice", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 20 Feb 2013 15:58:41 UTC +00:00], ["day", nil], ["device", nil], ["email", nil], ["issue", nil], ["location", nil], ["name", nil], ["number", nil], ["oncampus", nil], ["opsystem", nil], ["otherdevice", nil], ["updated_at", Wed, 20 Feb 2013 15:58:41 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35mRepair Exists (1.0ms)[0m  SELECT 1 FROM "repairs" WHERE "repairs"."email" = 'mcharfi13@gmail.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+
+
+Started GET "/repairs" for 127.0.0.1 at 2013-02-20 11:02:18 -0500
+Processing by RepairsController#index as HTML
+  [1m[36mRepair Load (1.0ms)[0m  [1mSELECT "repairs".* FROM "repairs" [0m
+  Rendered repairs/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 271ms (Views: 268.0ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1[0m
+  [1m[35mRepair Exists (0.0ms)[0m  SELECT 1 FROM "repairs" WHERE "repairs"."email" = 'mcharfi13@gmail.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+
+
+Started GET "/repairs" for 127.0.0.1 at 2013-02-20 11:05:50 -0500
+Processing by RepairsController#index as HTML
+  [1m[36mRepair Load (1.0ms)[0m  [1mSELECT "repairs".* FROM "repairs" [0m
+  Rendered repairs/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 263ms (Views: 261.0ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
