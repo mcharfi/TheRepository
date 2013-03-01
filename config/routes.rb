@@ -1,7 +1,9 @@
 MehdiApp::Application.routes.draw do
+  devise_for :users
+
   resources :repairs
 
-  #resources :issues
+  resources :issues
 
   resources :posts
 

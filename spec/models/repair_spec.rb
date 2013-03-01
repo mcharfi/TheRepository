@@ -1,5 +1,9 @@
 require 'spec_helper'
 
+before do
+  sign_in
+end
+
 describe Repair do
   it "should require name, email, location, and issue" do
     repair = Repair.create

@@ -270,3 +270,72 @@ Completed 200 OK in 263ms (Views: 261.0ms | ActiveRecord: 1.0ms)
   [1m[35m (0.0ms)[0m  rollback transaction
   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/repairs" for 127.0.0.1 at 2013-02-28 22:23:13 -0500
+Processing by RepairsController#index as HTML
+  [1m[35mRepair Load (1.0ms)[0m  SELECT "repairs".* FROM "repairs" 
+  Rendered repairs/index.html.erb within layouts/application (115.0ms)
+Completed 200 OK in 511ms (Views: 506.0ms | ActiveRecord: 1.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mRepair Exists (0.0ms)[0m  SELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mRepair Exists (0.0ms)[0m  SELECT 1 FROM "repairs" WHERE "repairs"."email" = '' LIMIT 1
+  [1m[36mRepair Exists (0.0ms)[0m  [1mSELECT 1 FROM "repairs" WHERE "repairs"."email" = 'mcharfi13@gmail.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/repairs" for 127.0.0.1 at 2013-02-28 22:23:52 -0500
+Processing by RepairsController#index as HTML
+  [1m[35mRepair Load (0.0ms)[0m  SELECT "repairs".* FROM "repairs" 
+Completed 200 OK in 15ms (Views: 5.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-02-28 22:23:52 -0500
+Compiled issues.css  (177ms)  (pid 5764)
+Compiled posts.css  (8ms)  (pid 5764)
+Compiled repairs.css  (30ms)  (pid 5764)
+Compiled scaffolds.css  (86ms)  (pid 5764)
+Compiled application.css  (523ms)  (pid 5764)
+Served asset /application.css - 200 OK (702ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-02-28 22:23:53 -0500
+Compiled jquery.js  (5ms)  (pid 5764)
+Compiled jquery_ujs.js  (0ms)  (pid 5764)
+Compiled issues.js  (1454ms)  (pid 5764)
+Compiled posts.js  (421ms)  (pid 5764)
+Compiled repairs.js  (413ms)  (pid 5764)
+Compiled application.js  (2571ms)  (pid 5764)
+Served asset /application.js - 200 OK (2749ms)
+
+
+Started GET "/repairs/new" for 127.0.0.1 at 2013-02-28 22:23:59 -0500
+Processing by RepairsController#new as HTML
+  Rendered repairs/_form.html.erb (179.0ms)
+Completed 200 OK in 406ms (Views: 405.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/repairs/stylesheets/foundation.min.css" for 127.0.0.1 at 2013-02-28 22:23:59 -0500
+
+
+Started GET "/repairs/stylesheets/app.css" for 127.0.0.1 at 2013-02-28 22:23:59 -0500
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
