@@ -4,4 +4,7 @@ class Repair < ActiveRecord::Base
   validates :email, :uniqueness => true
   validates :number, :length => { :is => 10 }
   
+  scope :oncampus,
+    where('oncampus = ?', true)
+  
 end
