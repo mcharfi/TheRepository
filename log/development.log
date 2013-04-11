@@ -5405,3 +5405,57 @@ Served asset /repairs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-10 21:17:47 -0400
 Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-11 10:04:30 -0400
+Processing by RepairsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mRepair Load (1.0ms)[0m  SELECT "repairs".* FROM "repairs" WHERE (oncampus = 't')
+  Rendered repairs/index.html.erb within layouts/application (167.0ms)
+Compiled application.js  (8ms)  (pid 6968)
+Completed 200 OK in 879ms (Views: 659.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2013-04-11 10:04:32 -0400
+Served asset /issues.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-11 10:04:32 -0400
+Served asset /posts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-11 10:04:32 -0400
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/repairs.css?body=1" for 127.0.0.1 at 2013-04-11 10:04:32 -0400
+Served asset /repairs.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-11 10:04:32 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-11 10:04:32 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-11 10:04:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2013-04-11 10:04:33 -0400
+Served asset /issues.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/repairs.js?body=1" for 127.0.0.1 at 2013-04-11 10:04:33 -0400
+Served asset /repairs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-04-11 10:04:33 -0400
+Served asset /posts.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-11 10:04:33 -0400
+Served asset /application.js - 200 OK (14ms)

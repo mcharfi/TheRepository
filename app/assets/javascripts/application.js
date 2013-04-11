@@ -13,3 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(function () {
+ var $display = $("#display");
+ var $button = $("#button");
+ $button.click(function () {
+ $display.toggle("slow");
+ });
+});
