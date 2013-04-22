@@ -1,6 +1,12 @@
 <title>FixIT Philadelphia</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
 
-<div style="background-color: #00FFFF">
+<link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+<div style="background-color: #FFFFFF">
 
  <div class="fixed">
   <nav class="top-bar">
@@ -20,45 +26,9 @@
       <!-- Right Nav Section -->
       <ul class="right">
         <li class="divider"></li>
-        <li class="has-dropdown">
-          <a href="#">Services</a>
-          <ul class="dropdown">
-            <li><label>Section Name</label></li>
-            <li class="has-dropdown">
-              <a href="#" class="">Has Dropdown, Level 1</a>
-              <ul class="dropdown">
-                <li><a href="#">Dropdown Options</a></li>
-                <li><a href="#">Dropdown Options</a></li>
-                <li><a href="#">Level 2</a></li>
-                <li><a href="#">Subdropdown Option</a></li>
-                <li><a href="#">Subdropdown Option</a></li>
-                <li><a href="#">Subdropdown Option</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li class="divider"></li>
-            <li><label>Section Name</label></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li class="divider"></li>
-            <li><a href="#">See all &rarr;</a></li>
-          </ul>
-        </li>
+        <li><a href="#">Created by Mehdi Charfi</a></li>
         <li class="divider"></li>
-        <li><a href="#">Rates</a></li>
-        <li class="divider"></li>
-        <li class="has-dropdown">
-          <a href="#">People</a>
-          <ul class="dropdown">
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li class="divider"></li>
-            <li><a href="#">See all &rarr;</a></li>
-          </ul>
-        </li>
+        
       </ul>
     </section>
   </nav>
@@ -69,74 +39,105 @@
 
 <div class="row">
     <div class="twelve columns">
-      <h2>Welcome to FixIT Philadelphia</h2>
+      <h1>Welcome to FixIT Philadelphia</h1>
       <p><i><strong>If it ain't broke, don't fix it. But if it is, we'll be happy to help!</strong></i></p>
       <hr />
     </div>
   </div>
-<center>
-	
-<div id="display">
-    Welcome to Our Site!
-    </div>
-<div id="button">
-    <button>Show/Hide</button>
-    </div>
-</center>
-
-  <div class="row">
+  
+<div class="row">
     <div class="eight columns">
+    <br><br>	
+    <center><img width=500 src="http://4.bp.blogspot.com/-6mAp2NnjU64/UUfnYm6mYhI/AAAAAAAAAKM/QWiGlNP_7kM/s1600/steallr.jpg"><br><br>
+     <h3>Get Tech Support Now!</h3></center>
+
+      <!-- Grid Example -->
       <div class="row">
         <div class="twelve columns">
-          
+          <div class="panel">
+            <p>Get tech support for: Windows and Mac Operating Systems, Microsoft Office, Virus problems, Internet security, Email problems, iTunes, and much more.</p>
+          </div>
+        </div>
+      </div>
       
-<h1>Listing repairs</h1>
+<center><h4>→  <%= link_to 'Click Here to Create a New Repair', new_repair_path %>  ←</h4></center>
 
-<table>
+    </div>
+
+    <div class="four columns">
+      <h4>About FixIT</h4>
+      <p>FixIT makes it easy for anyone to get tech support from anywhere on campus within 24 hours. The first service of its kind, FixIT charges 50¢ per-minute, making it easy for you to get the help you need no matter what the problem is. And, because we believe in our service so much, if we can't help you, not only is our service free, but we can offer you advice on how to get it fixed.</p>
+      <p>Our support staff has both the passion and expertise to help you fix your tech issue, regardless of the problem you are experiencing. Software issues? Internet not connecting? Have a virus? Need to organize your photos on your computer or online? Need help setting up a social networking page, or with Google's online tools? We can do that too. Give us a try, your first five minutes are free. There is nothing to lose.</p>
+	  <p><img src="http://fraudavengers.org/wp-content/uploads/2011/10/MultipleTechDevices.jpg"></p>
+    </div>
+  </div>
+      
+<center>
+
+<div id="display">
+  <div class="row">
+        <div class="twelve columns">
+          
+<center>      
+<h3>Repair Queue</h3>
+
+<table style="vertical-align:middle">
   <tr>
-    <th>Day</th>
+    <th>Date</th>
     <th>Name</th>
     <th>Email</th>
     <th>Number</th>
-    <th>Oncampus</th>
+    <th>On Campus?</th>
     <th>Location</th>
     <th>Device</th>
-    <th>Opsystem</th>
+    <th>OS</th>
     <th>Issue</th>
-    <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @repairs.each do |repair| %>
   <tr>
-    <td><%= repair.day %></td>
-    <td><%= repair.name %></td>
-    <td><%= repair.email %></td>
-    <td><%= repair.number %></td>
-    <td><%= repair.oncampus %></td>
-    <td><%= repair.location %></td>
-    <td><%= repair.device %></td>
-    <td><%= repair.opsystem %></td>
-    <td><%= repair.issue %></td>
-    <td><%= link_to 'Show', repair %></td>
-    <td><%= link_to 'Edit', edit_repair_path(repair) %></td>
-    <td><%= link_to 'Destroy', repair, confirm: 'Are you sure?', method: :delete %></td>
+    <td><center><%= repair.day %></center></td>
+    <td><center><%= repair.name %></center></td>
+    <td><center><%= repair.email %></center></td>
+    <td><center><%= repair.number %></center></td>
+    <td><center><%= repair.oncampus %></center></td>
+    <td><center><%= repair.location %></center></td>
+    <td><center><%= repair.device %></center></td>
+    <td><center><%= repair.opsystem %></center></td>
+    <td><center><%= repair.issue %></center></td>
+    <td><center><%= link_to 'Edit', edit_repair_path(repair) %></center></td>
+    <td><center><%= link_to 'Delete', repair, confirm: 'Are you sure that you want to delete this repair?', method: :delete %></center></td>
   </tr>
 <% end %>
 </table>
-
+</center>
 <br />
-
-<%= link_to 'New Repair', new_repair_path %>
-
-<%= link_to 'Post', 'posts#index' %>
     
-    
-    </div>
-    </div>
 	</div>
     </div>
-<br><br><br><br>
-<div align="center"><strong>© 2013 Mehdi Charfi. All rights reserved.</strong></center></div><br><br>
+    
+        </div>
+    
+    <div id="button">
+    <button style="font-weight: bold">Show/Hide Repair Queue</button>
+    </div>
+</center>
+    
+<br>
+<div align="center"><strong>© 2013 Mehdi Charfi. All rights reserved.</strong></center></div><br>
 </div>
+
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+
+  
+    <script>
+    $(window).load(function(){
+      $("#featured").orbit();
+    });
+    </script> 

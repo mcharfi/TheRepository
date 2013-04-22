@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :day %><br />
+    <%= f.label "Date" %><br />
     <%= f.date_select :day %>
   </div>
   <div class="field">
@@ -28,7 +28,7 @@
     <%= f.text_field :number %>
   </div>
   <div class="field">
-    <%= f.label :oncampus %><br />
+    <%= f.label "On Campus?" %><br />
     <%= f.check_box :oncampus %>
   </div>
   <div class="field">
@@ -36,7 +36,7 @@
     <%= f.text_field :location %>
   </div>
   <div class="field">
-    <%= f.label :device %><br />
+    <%= f.label "Device Type" %><br />
     <%= f.radio_button(:device, :desktop) %>
     <%= f.label(:device_desktop, "Desktop") %>
     <%= f.radio_button(:device, :laptop) %>
@@ -49,8 +49,8 @@
     <%= f.label(:device_other, "Other") %>
   </div>
   <div class="field">
-    <%= f.label :opsystem %><br />
-    <%= f.collection_select(:opsystem, [:windows, :macos, :android, :ios, :blackberry, :other], :to_s, :to_s) %>
+    <%= f.label "Operating System" %><br />
+    <%= f.collection_select(:opsystem, [:windows, :mac, :android, :ios, :blackberry, :other], :to_s, :to_s) %>
   </div>
   <div class="field">
     <%= f.label :issue %><br />

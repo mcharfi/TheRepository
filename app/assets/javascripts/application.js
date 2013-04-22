@@ -17,6 +17,7 @@
 $(function () {
  var $display = $("#display");
  var $button = $("#button");
+ $display.hide();
  $button.click(function () {
  $display.toggle("slow");
  });
