@@ -2,8 +2,8 @@ class RepairsController < ApplicationController
   # GET /repairs
   # GET /repairs.json
   def index
-#    @repairs = Repair.all
-    @repairs = Repair.oncampus
+    @repairs = Repair.all
+#    @repairs = Repair.oncampus
 
     respond_to do |format|
       format.html # index.html.erb
